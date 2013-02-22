@@ -1,0 +1,5 @@
+# Aliases
+
+[ -r ~/.git_aliases ] && source ~/.git_aliases
+[ -r ~/.bash_aliases ] && source ~/.bash_aliases
+
