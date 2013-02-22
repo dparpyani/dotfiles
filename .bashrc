@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # delete bash history
 [ -f ~/.bash_history ] && rm ~/.bash_history
