@@ -1,0 +1,23 @@
+
+# No bell style
+set bell-style none
+
+# Ask before displaying >25 items
+set completion-query-items 25
+
+# Ignore case for the command-line-completion functionality
+set completion-ignore-case on
+
+# 8bit input
+set meta-flag on
+set input-meta on
+set output-meta on
+set convert-meta on
+
+# Append a mark according to the file type in a listing
+set visible-stats off
+set mark-directories on
+
+# Show all instead of beeping first
+set show-all-if-ambiguous off
+
