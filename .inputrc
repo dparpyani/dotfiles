@@ -1,5 +1,5 @@
 
-# No bell style
+# Bell style
 set bell-style none
 
 # Ask before displaying >25 items
@@ -21,3 +21,33 @@ set mark-directories on
 # Show all instead of beeping first
 set show-all-if-ambiguous off
 
+# Undo change to history line when accept-line is executed
+set revert-all-at-newline on
+
+$if mode=emacs
+	"\C-v": quoted-insert				# Ctrl-v
+	
+	"\e[1~": beginning-of-line			# Home Key
+	"\e[7~": beginning-of-line			# Home Key
+	"\e[4~": end-of-line				# End Key
+	"\e[8~": end-of-line				# End Key
+	
+	"\e[5~": beginning-of-history		# Page up
+	"\e[6~": end-of-history				# Page down
+	
+	"\C-_": undo						# Ctrl-_
+	"\e[2~": paste-from-clipboard		# Ins. Key
+	"\C-?": backward-kill-line			# Ctrl-BackSpace
+	
+	#"\e[11~": "Function Key 1"			# F1
+	#"\e[12~": "Function Key 2"			# F2
+	#"\e[13~": "Function Key 3"			# F3
+	#"\e[14~": "Function Key 4"			# F4
+	#"\e[15~": "Function Key 5"			# F5
+	#"\e[17~": "Function Key 6"			# F6
+	#"\e[18~": "Function Key 7"			# F7
+	#"\e[19~": "Function Key 8"			# F8
+	#"\e[20~": "Function Key 9"			# F9
+	#"\e[21~": "Function Key 10"		# F10
+	#"\e[23~": "Function Key 11"		# F11
+$endif

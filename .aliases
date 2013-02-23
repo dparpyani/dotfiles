@@ -3,3 +3,5 @@
 [ -r ~/.git_aliases ] && source ~/.git_aliases
 [ -r ~/.bash_aliases ] && source ~/.bash_aliases
 
+alias vmode="set -o vi"
+alias emode="set -o emacs"
