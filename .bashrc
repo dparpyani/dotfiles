@@ -7,3 +7,4 @@ set -o emacs
 
 # aliases
 [ -r ~/.aliases ] && source ~/.aliases
+
