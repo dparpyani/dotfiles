@@ -5,4 +5,5 @@
 
 alias vmode="set -o vi"
 alias emode="set -o emacs"
+alias ls="ls --color=auto"
 
