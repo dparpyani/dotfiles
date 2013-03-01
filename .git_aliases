@@ -8,3 +8,6 @@ alias gl="git log --graph --abbrev-commit --date=relative --pretty=format:'%Cred
 alias gd="git diff"
 alias gg="git gui"
 alias gk="gitk"
+alias gb="git branch"
+alias gco="git checkout"
+
