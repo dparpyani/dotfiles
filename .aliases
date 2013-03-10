@@ -3,6 +3,9 @@
 [ -r ~/.git_aliases ] && source ~/.git_aliases
 [ -r ~/.bash_aliases ] && source ~/.bash_aliases
 
+# Check for trailing spaces in files
+alias tspace="egrep -irn \"^.*[^ ].*[ ]+$\""
+
 alias vmode="set -o vi"
 alias emode="set -o emacs"
 alias ls="ls --color=auto"
