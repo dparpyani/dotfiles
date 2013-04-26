@@ -1,7 +1,7 @@
 # Aliases
 
-[ -r ~/.git_aliases ] && source ~/.git_aliases
 [ -r ~/.bash_aliases ] && source ~/.bash_aliases
+[ -r ~/dotfiles/.git_aliases ] && source ~/dotfiles/.git_aliases
 
 # Check for trailing spaces in files
 alias tspace="egrep -irn \"^.*[^ ].*[ ]+$\""

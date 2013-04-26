@@ -1,18 +1,18 @@
 #!/bin/bash
-# Copies necassary files to the home directory
 
-copy () {
-    if [ -e $1 ]; then
-        cp $1 ~/
-    else
-        echo "${1} not found."
-    fi
+source_file() {
+    ! [ -f "${1}" ] && echo "${2}" >> ${1};
+    ! grep -q "${2}" "${1}" && echo "${2}" >> ${1};
 }
 
-copy .inputrc
-copy .bashrc
-copy .vimrc
+source_file ~/.bashrc "source ~/dotfiles/.bashrc"
+source_file ~/.vimrc ":source ~/dotfiles/.vimrc"
 
-copy .aliases
-copy .git_aliases
+
+# copy .inputrc if -f option specified
+if [ "${1}" = "-f" ]; then
+    cp ~/dotfiles/.inputrc ~/.inputrc
+else
+    echo "Force-copy option ('-f') not specified, skipping .inputrc file..."
+fi
 

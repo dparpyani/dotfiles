@@ -6,5 +6,5 @@ set -o emacs
 [ -f ~/.bash_history ] && rm ~/.bash_history
 
 # aliases
-[ -r ~/.aliases ] && source ~/.aliases
+[ -r ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 
