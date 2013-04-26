@@ -1,13 +1,15 @@
 # Aliases for git commands
 
 alias gs="git status -sb"
+alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
 alias glog="git log"
 alias gl="git log --graph --abbrev-commit --date=relative --pretty=format:'%Cred%h %Cgreen[%an] %Creset%s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset'"
 alias gd="git diff"
 alias gg="git gui"
-alias gk="gitk"
+alias gk="gitk &"
+alias gka="gitk --all &"
 alias gb="git branch"
 alias gco="git checkout"
 
