@@ -1,3 +1,5 @@
+# Vim as default editor
+export EDITOR=vim
 
 # Editing mode
 set -o emacs
