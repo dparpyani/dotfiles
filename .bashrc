@@ -4,9 +4,12 @@ export EDITOR=vim
 # Editing mode
 set -o emacs
 
-# delete bash history
+# Delete bash history
 [ -f ~/.bash_history ] && rm ~/.bash_history
 
-# aliases
+# Aliases
 [ -r ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
+
+# Colors definitions
+source ~/dotfiles/ansicolor
 
